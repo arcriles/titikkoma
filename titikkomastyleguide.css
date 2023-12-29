@@ -1,0 +1,9 @@
+:root {
+    --mainorange: rgba(255, 108, 34, 1);
+    --mainorange-2: rgba(255, 146, 9, 1);
+    --mainorange-3: rgba(255, 208, 153, 1);
+    --neutralblack: rgba(79, 79, 79, 1);
+    --neutralwhite: rgba(255, 255, 255, 1);
+    --shadow-1: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    --variable-collection-main-navy: rgba(43, 74, 153, 1);
+}
