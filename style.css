@@ -1,0 +1,97 @@
+.contact-navbar,
+.menu-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.contact-info {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.menus {
+  display: flex;
+  gap: 15px;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.text-wrapper {
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Custom styles for the carousel */
+#carouselExample {
+  max-width: 100%; /* Set the maximum width of the carousel */
+  margin: 0 auto; /* Center the carousel on the page */
+}
+
+.carousel-inner img {
+  width: 100%; /* Make the images fill the carousel */
+  height: auto; /* Maintain the aspect ratio of the images */
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Set the height as needed */
+  margin-bottom: 30px; /* Add more space between .group and .titikkomais */
+}
+
+.titikkomais {
+  text-align: center;
+  font-size: 27px; /* Set the desired font size */
+  padding: 100px; /* Add padding around the text */
+}
+
+
+
+
+.custom-btn {
+  background-color: transparent;
+  color: #28a745;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+/* Additional adjustments to maintain responsiveness */
+@media (max-width: 768px) {
+  .group {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .group {
+    width: 95%;
+  }
+}

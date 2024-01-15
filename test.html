@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="globals.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Link to Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar for phone number and logo -->
+  <nav class="contact-navbar">
+
+        <!-- Your logo on the left -->
+        <div class="logo-container">
+
+        </div>
+
+    <!-- Contact information on the right -->
+    <div class="contact-info">
+      
+      <span>Phone: 123-450</span>
+    </div>
+  </nav>
+
+  <!-- Navigation bar for menu -->
+  <nav class="menu-navbar">
+        <!-- Your logo on the left -->
+    <div class="logo-container">
+      <img src="your-logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="menus">
+      <div class="menu" id="layanan"><div class="text-wrapper">Layanan</div></div>
+      <div class="menu" id="tentang"><div class="text-wrapper">Tentang</div></div>
+      <div class="menu" id="kontak"><div class="text-wrapper">Kontak</div></div>
+    </div>
+  </nav>
+
+
+  <!-- Bootstrap Carousel -->
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/1600x600.png" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1600x600.png" class="d-block w-100" alt="Slide 2">
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="text">
+    <p class="titikkomais">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+    scrambled it to make a type specimen book.
+    </p>
+    </div>
+
+
+  <!-- Category Image Viewer -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Category Image Viewer</h2>
+        <div class="btn-group">
+          <button class="btn custom-btn" onclick="showCategory('nature')">Nature</button>
+          <button class="btn custom-btn" onclick="showCategory('animals')">Animals</button>
+          <button class="btn custom-btn" onclick="showCategory('architecture')">Architecture</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12" id="image-container">
+        <img id="category-image" src="https://via.placeholder.com/800x400.png" alt="Category Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+</body>
+
+<script>
+
+
+
+// Your existing JavaScript code for handling navigation
+var layananMenu = document.getElementById("layanan");
+var tentangMenu = document.getElementById("tentang");
+var kontakMenu = document.getElementById("kontak");
+
+layananMenu.addEventListener("click", function () {
+  alert("Layanan clicked");
+  // Add your navigation logic here
+});
+
+tentangMenu.addEventListener("click", function () {
+  alert("Tentang clicked");
+  // Add your navigation logic here
+});
+
+kontakMenu.addEventListener("click", function () {
+  alert("Kontak clicked");
+  // Add your navigation logic here
+});
+
+
+function showCategory(category) {
+      // Update the image source based on the selected category
+      const image = document.getElementById('category-image');
+      switch (category) {
+        case 'nature':
+          image.src = 'nature.jpg'; // Replace with the actual path to your nature image
+          break;
+        case 'animals':
+          image.src = 'animals.jpg'; // Replace with the actual path to your animals image
+          break;
+        case 'architecture':
+          image.src = 'architecture.jpg'; // Replace with the actual path to your architecture image
+          break;
+        default:
+          // Default case or handle other categories as needed
+          break;
+      }
+    }
+
+
+
+
+
+</script>
+</html>
